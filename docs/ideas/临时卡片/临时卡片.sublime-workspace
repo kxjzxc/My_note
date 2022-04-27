@@ -1,0 +1,513 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "202201242327 梦核校园游记.md",
+			"settings":
+			{
+				"buffer_size": 143,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "202004281839 可以存储日子的人.md",
+			"settings":
+			{
+				"buffer_size": 469,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "202101151818 太空流浪者.md",
+			"settings":
+			{
+				"buffer_size": 108,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "202112311054 夜校园世界.md",
+			"settings":
+			{
+				"buffer_size": 88,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/kermit/Desktop/kxjzxc.cpp",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/User/MyC++.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/MyC++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/MyC++.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/MyC++.sublime-build",
+					"RunInCommand"
+				]
+			],
+			[
+				"Packages/User/MyC++.sublime-build",
+				"RunInCommand"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"zk",
+				"ZK: New Zettel Note"
+			],
+			[
+				"pcip",
+				"Package Control: Install Package"
+			],
+			[
+				"pcu",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pcrp",
+				"Package Control: Remove Package"
+			],
+			[
+				"pcpu",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 416.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/kermit/Document/Article/Ideas/临时卡片"
+	],
+	"file_history":
+	[
+		"/D/kermit/Document/Code/CSLearn/net_lab/NET_ProPlusMax.md",
+		"/D/kermit/Document/Study/找工作/2021秋招游戏客户端岗笔试面试个人记录/莉莉丝秋招面试.md",
+		"/D/kermit/Document/Study/找工作/2021秋招游戏客户端岗笔试面试个人记录/腾讯天美秋招一面20210818.md",
+		"/D/kermit/Document/Study/找工作/2021秋招游戏客户端岗笔试面试个人记录/完美世界秋招面试.md",
+		"/D/kermit/Document/Study/找工作/2021秋招游戏客户端岗笔试面试个人记录/西山居秋招面试.md",
+		"/D/kermit/Document/Study/找工作/2021秋招游戏客户端岗笔试面试个人记录/鹰角网络秋招笔试20210819.md",
+		"/D/kermit/Document/Study/找工作/2021秋招游戏客户端岗笔试面试个人记录/网易互娱秋招面试.md",
+		"/D/kermit/Document/Study/找工作/Markdown-Resume-Template/README.md",
+		"/D/kermit/Document/Study/Major/人工智能基础/VCI_CNN_ws/train.py",
+		"/D/kermit/Document/Amusement/Game/A1382 v2.2/README.md",
+		"/D/kermit/Document/Study/找工作/2021秋招游戏客户端岗笔试面试个人记录/米哈游实习笔试题.md",
+		"/D/kermit/Document/Study/找工作/2021秋招游戏客户端岗笔试面试个人记录/腾讯光子秋招一面20210813.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202201092110 以王心凌为原型的人物设计.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202004291123 高中灵感总结.md",
+		"/D/kermit/Document/Code/Web/mikutap-master/README.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202112310952 Mp3君.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202112311054 夜校园世界.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202112310956 被丢弃的布娃娃.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202112311101 元素周期表拟人计划.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/2020.1.26.txt",
+		"/D/kermit/Document/Article/Ideas/临时卡片/2019.11.2.txt",
+		"/D/kermit/Document/Article/Ideas/临时卡片/--2019.12.8.txt",
+		"/D/kermit/Document/Article/Ideas/临时卡片/2020.2.txt",
+		"/D/kermit/Document/Article/Ideas/临时卡片/即兴灵感.txt",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202006271215 无尽之塔.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202101011619 随机生成npc.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202112311008 当一个质点学会思考后.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202101081031 献给你的绝妙冒险.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202005012200 迷途之人.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202004162224 小说世界.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202004252356 小说人物操控.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202101151818 太空流浪者.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202004171211 互动小说.md",
+		"/D/kermit/Desktop/pc_communicate.c",
+		"/D/kermit/Desktop/kxjzxc.cpp",
+		"/D/kermit/Document/Code/vaporwave/index.html",
+		"/D/kermit/Document/Article/Blogs/MyHexoBlog/source/_posts/数字图像处理之图像获取与直方图均衡化.md",
+		"/D/kermit/Document/Competition/RoboMaster/code/My project/Engineer/Engineer_F427IIH6_20191225_V1.2/Engineer_F427IIH6_20191225/Src/freertos.c",
+		"/D/kermit/Document/Competition/GCXL/plan/每周例会总结.md",
+		"/D/kermit/Document/Competition/GCXL/plan/整体规划.md",
+		"/D/kermit/Document/Competition/RoboMaster/code/Other project/Development-Board-C-Examples-master/readme.md",
+		"/D/kermit/Document/Competition/RoboMaster/code/My project/Engineer/Engineer_F427IIH6_20191225_V1.2/Engineer_F427IIH6_20191225/Core/Task/can_msg.c",
+		"/D/kermit/Desktop/kxjzxc.c",
+		"/D/kermit/Document/Competition/RoboMaster/code/My project/Infantry/Chassis_kxj/Src/User/Chassis.c",
+		"/D/kermit/Document/Competition/GCXL/plan/plan.md",
+		"/D/kermit/Document/Competition/GCXL/plan/project.md",
+		"/D/kermit/Desktop/kxjzxc",
+		"/D/kermit/Document/Competition/RoboMaster/code/My project/Engineer/Engineer_F427IIH6_20191225_V1.2/Engineer_F427IIH6_20191225/Core/Task/chassis.c",
+		"/D/kermit/Document/Competition/RoboMaster/code/My project/Engineer/Engineer_F427IIH6_20191225_V1.2/Engineer_F427IIH6_20191225/Core/Lib/pid.c",
+		"/D/kermit/Document/Competition/RoboMaster/code/My project/Engineer/Engineer_F427IIH6_20191225_V1.2/Engineer_F427IIH6_20191225/Core/Task/chassis.h",
+		"/D/kermit/Document/Competition/RoboMaster/code/My project/Engineer/Engineer_F427IIH6_20191225_V1.2/Engineer_F427IIH6_20191225/Src/stm32f4xx_it.c",
+		"/D/kermit/Document/Competition/RoboMaster/code/My project/Engineer/Engineer_F427IIH6_20191225_V1.2/Engineer_F427IIH6_20191225/Src/main.c",
+		"/D/kermit/Document/Competition/RoboMaster/code/My project/Engineer/Engineer_F427IIH6_20191225_V1.2/Engineer_F427IIH6_20191225/Core/Bsp/can_motor.h",
+		"/D/kermit/Document/Competition/RoboMaster/code/My project/Engineer/Engineer_F427IIH6_20191225_V1.2/Engineer_F427IIH6_20191225/Core/Bsp/can_motor.c",
+		"/D/kermit/Document/Competition/RoboMaster/code/My project/Engineer/Engineer_F427IIH6_20191225_V1.2/Engineer_F427IIH6_20191225/Core/Lib/pid.h",
+		"/D/kermit/Document/Competition/RoboMaster/code/My project/AutoInfantry/AutoInfantry/Core/Inc/chassis.h",
+		"/D/kermit/Document/Competition/RoboMaster/code/My project/AutoInfantry/AutoInfantry/Core/Inc/pid.h",
+		"/D/kermit/Document/Competition/RoboMaster/vision/Development-Board-C-Examples-master/readme.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202004161609 小本子灵感总结.md",
+		"/D/kermit/Document/Competition/SmartCar/Projects/SSL_kxj_2020.7.7/src/Inc/include.h",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202004282023 舍弃红尘的隐居者.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202004281839 可以存储日子的人.md",
+		"/D/kermit/Document/Article/Ideas/临时卡片/202004281931 对战游戏与小游戏的结合.md",
+		"/D/kermit/Document/Amusement/Game/dosgame/doom2.conf",
+		"/D/kermit/Document/Amusement/Game/dosgame/zork1.conf",
+		"/D/kermit/Document/Amusement/Game/dosgame/rich3.conf",
+		"/D/kermit/Document/Article/Ideas/临时卡片/.search_results.zkr",
+		"/D/kermit/Document/Article/Ideas/临时卡片/临时卡片.sublime-project",
+		"/D/kermit/Document/Amusement/Game/citra3ds/citra-windows-mingw-20200417-32cbb1b/nightly-mingw/README.md",
+		"/D/kermit/Document/Article/Blogs/MyHexoBlog/source/_posts/日渐颓废的平凡之路.md",
+		"/D/kermit/Document/Article/Ideas/202004162224 小说世界.md",
+		"/D/kermit/Document/Article/Ideas/202004162158 需要付出时间的陪伴者.md",
+		"/D/kermit/Document/Hack/hackinglabs/python/Get response header.py",
+		"/D/kermit/Document/Article/Ideas/202004161609 小本子灵感总结.md",
+		"/D/kermit/Document/Article/Ideas/需要付出时间的陪伴者.md",
+		"/D/kermit/Document/Article/Ideas/--2019.12.8.txt",
+		"/D/kermit/Document/Article/Ideas/202004162230 临时卡片.md",
+		"/C/Users/kermit/AppData/Roaming/Sublime Text 3/Packages/User/sublime_zk.sublime-settings",
+		"/D/kermit/Document/Article/Blogs/MyHexoBlog/source/_posts/大学物理——牛顿力学、刚体转动、相对论.md",
+		"/D/kermit/Desktop/text.md",
+		"/D/kermit/Document/Article/Blogs/MyHexoBlog/source/_posts/SWERC 2013 H Binary Tree.md",
+		"/C/Users/kermit/AppData/Roaming/Sublime Text 3/Packages/sublime_zk/sublime_zk.sublime-settings",
+		"/D/kermit/Document/Article/Blogs/MyHexoBlog/source/_posts/关于u盘运行veket系统这件事.md",
+		"/D/kermit/Document/Article/Blogs/MyHexoBlog/source/_posts/HackingLab之基础关攻略.md",
+		"/C/Users/kermit/AppData/Roaming/Sublime Text 3/Packages/sublime_zk/Default (Windows).sublime-keymap",
+		"/C/Users/kermit/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/kermit/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/kermit/Document/Article/Ideas/灵感记录.md",
+		"/D/kermit/Document/Article/Blogs/MyHexoBlog/source/_posts/HackingLab之脚本关攻略.md",
+		"/D/kermit/Document/Article/观后感/侠肝义胆沈剑心.md",
+		"/D/kermit/Document/Article/Blogs/MyHexoBlog/_config.yml",
+		"/D/kermit/Document/Article/Blogs/MyHexoBlog/source/_posts/ROS第一坑之基本操作.md",
+		"/D/kermit/Document/Hack/hackinglabs/python/修改请求头.py",
+		"/C/Users/kermit/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/kermit/AppData/Local/Temp/BNZ.5e8ca2202906bb3/README.md"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "202201242327 梦核校园游记.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 143,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/sublime_zk/sublime_zk.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "202004281839 可以存储日子的人.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 469,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/sublime_zk/sublime_zk.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "202101151818 太空流浪者.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 108,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/sublime_zk/sublime_zk.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "202112311054 夜校园世界.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 88,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/sublime_zk/sublime_zk.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/kermit/Desktop/kxjzxc.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 210.0
+	},
+	"input":
+	{
+		"height": 47.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 126.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "临时卡片.sublime-project",
+	"replace":
+	{
+		"height": 416.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
