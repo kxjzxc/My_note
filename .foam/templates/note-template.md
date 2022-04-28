@@ -1,0 +1,5 @@
+---
+title: 
+date: $CURRENT_YEAR 年 $CURRENT_MONTH_NAME $CURRENT_DATE 日 $CURRENT_HOUR:$CURRENT_MINUTE
+tags: 
+---
