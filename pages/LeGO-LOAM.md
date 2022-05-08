@@ -1,4 +1,4 @@
-tags:: #毕业设计
+tags:: #毕业设计 #SLAM
 
 - # 算法流程
 	- ## 启动
@@ -9,7 +9,7 @@ tags:: #毕业设计
 			- camera_init_to_map
 			- base_link_to_camera
 			- ((27d7dda7-2b9f-4b34-b073-b6b3176b340b))
-			- featureAssociation
+			- ((5dbdbde0-6910-4460-9bd2-b2482f029ec6))
 			- mapOptmization
 			- transformFusion
 	- ## 头文件
@@ -41,7 +41,8 @@ tags:: #毕业设计
 		  ```
 		  **回调函数**:cloudHandler()
 		- ### featureAssociation
-			- #### 构造函数
+		  id:: 5dbdbde0-6910-4460-9bd2-b2482f029ec6
+			- **构造函数**
 				- 1. 订阅imageProjection处理过后的点云数据
 				  
 				        "/segmented_cloud"(sensor_msgs::PointCloud2)，数据处理函数laserCloudHandler
@@ -59,32 +60,34 @@ tags:: #毕业设计
 				        "/outlier_cloud_last"(sensor_msgs::PointCloud2)
 				        "/laser_odom_to_init"(nav_msgs::Odometry)
 				- 3. 初始化参数
-### 回调函数
-- **laserCloudHandler**:主要是被分割点和经过降采样的地面点,其 intensity 记录了该点在深度图上的索引位置
-- **laserCloudInfoHandler**
-- **outlierCloudHandler**
-- **imuHandler**:
-    1. 通过接收到的imuIn里面的四元数得到roll,pitch,yaw三个角；
-    2. 对加速度进行坐标变换，进行加速度坐标交换时将重力加速度去除，然后再进行 $x$到 $z$, $y$到$x$,$z$到$y$的变换。
-    3. 将欧拉角，加速度，速度保存到循环队列中；
-    4. 对速度，角速度，加速度进行积分，得到位移，角度和速度(AccumulateIMUShiftAndRotation())；
-### 运行函数
-#### 特征提取
-1. **去除运动畸变**：将点云数据进行坐标变换，进行插补等工作
-2. **曲率计算**：计算曲率，以相邻左右5个点计算，并保存结果
-3. **标记瑕点**：相邻但距离较远的点（平行点被误判为平面点的情况），以及邻域距离变化较大的点（遮挡点被误判为边点的情况）
-4. **特征提取**
-5. **发布特征点云**
-#### 特征关联
-1. **更新先验位姿**：将当前时刻保存的IMU数据作为先验数据
-2. **更新位姿**：找特征平面，通过面之间的对应关系，以及通过角、边特征的匹配，计算变换矩阵
-3. **整合信息**：将IMU信息融入到位姿更新当中
-4. **发布里程计信息**
-5. **发布点云**
-#### 运动物体消除
-**函数**：
-- popMovingCornerFeatures()
-- popMovingPlanarFeatures()
+			- **回调函数**
+				- **laserCloudHandler**:主要是被分割点和经过降采样的地面点,其 intensity 记录了该点在深度图上的索引位置
+				- **laserCloudInfoHandler**
+				- **outlierCloudHandler**
+				- **imuHandler**:
+				    1. 通过接收到的imuIn里面的四元数得到roll,pitch,yaw三个角；
+				    2. 对加速度进行坐标变换，进行加速度坐标交换时将重力加速度去除，然后再进行 $x$到 $z$, $y$到$x$,$z$到$y$的变换。
+				    3. 将欧拉角，加速度，速度保存到循环队列中；
+				    4. 对速度，角速度，加速度进行积分，得到位移，角度和速度(AccumulateIMUShiftAndRotation())；
+			- **运行函数**
+				- **特征提取**
+					- 1. **去除运动畸变**：将点云数据进行坐标变换，进行插补等工作
+					  2. **曲率计算**：计算曲率，以相邻左右5个点计算，并保存结果
+					  3. **标记瑕点**：相邻但距离较远的点（平行点被误判为平面点的情况），以及邻域距离变化较大的点（遮挡点被误判为边点的情况）
+					  4. **特征提取**
+					  5. **发布特征点云**
+				- **特征关联**
+					- 1. **更新先验位姿**：将当前时刻保存的IMU数据作为先验数据
+					  2. **更新位姿**：找特征平面，通过面之间的对应关系，以及通过角、边特征的匹配，计算变换矩阵
+					  3. **整合信息**：将IMU信息融入到位姿更新当中
+					  4. **发布里程计信息**
+					  5. **发布点云**
+				- **运动物体消除**
+					- **函数**：
+						- popMovingCornerFeatures()
+						- popMovingPlanarFeatures()
+			- 参考文章
+				- [LEGO-LOAM源码解析 --- FeatureAssociation节点(1)](https://zhuanlan.zhihu.com/p/242559124)
 - ## mapOptmization
   **主要内容**：地图优化，拥有三个线程，回环检测、可视化点云
 ### 构造函数

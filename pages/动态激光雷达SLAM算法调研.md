@@ -1,4 +1,4 @@
-tags:: #毕业设计
+tags:: #毕业设计 #SLAM
 
 - # 国内外研究现状(开题报告部分)
   collapsed:: true
