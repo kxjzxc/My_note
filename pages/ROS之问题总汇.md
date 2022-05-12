@@ -8,3 +8,7 @@ tags:: #ROS
 		  killall -9 rosmaster
 		  ```
 	-
+- ros运行`rosrun rqt_tf_tree rqt_tf_tree`出错
+	- ```shell-session
+	  $ 
+	  ```
