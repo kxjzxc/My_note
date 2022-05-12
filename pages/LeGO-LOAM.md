@@ -90,44 +90,44 @@ tags:: #毕业设计 #SLAM
 				- [LEGO-LOAM源码解析 --- FeatureAssociation节点(1)](https://zhuanlan.zhihu.com/p/242559124)
 - ## mapOptmization
   **主要内容**：地图优化，拥有三个线程，回环检测、可视化点云
-### 构造函数
-订阅话题:
-
-  "/laser_cloud_corner_last"(sensor_msgs::PointCloud2)，数据处理函数laserCloudCornerLastHandler
-  "/laser_cloud_surf_last"(sensor_msgs::PointCloud2)，数据处理函数laserCloudSurfLastHandler
-  "/outlier_cloud_last"(sensor_msgs::PointCloud2)，数据处理函数laserCloudOutlierLastHandler
-   "/laser_odom_to_init"(nav_msgs::Odometry)，数据处理函数laserOdometryHandler
-  imuTopic = "/imu/data"(sensor_msgs::Imu)，数据处理函数imuHandler
-
-发布话题，这些topic有：
-
-  "/key_pose_origin"(sensor_msgs::PointCloud2)
-  "/laser_cloud_surround"(sensor_msgs::PointCloud2)
-  "/aft_mapped_to_init"(nav_msgs::Odometry)
-  "/history_cloud"(sensor_msgs::PointCloud2)
-  "/corrected_cloud"(sensor_msgs::PointCloud2)
-  "/recent_cloud"(sensor_msgs::PointCloud2)
-  "/registered_cloud"(sensor_msgs::PointCloud2)
-### 主线程
-
-1. **坐标变换**：将坐标转移到世界坐标系下，得到可用于建图的Lidar坐标，即修改transformTobeMapped的值；
-2. **提取周围的关键帧**；
-3. **下采样当前scan**：将当前各类点云降采样
-4. **当前scan进行图优化过程**:根据现有地图与最新点云数据进行配准从而更新机器人精确位姿与融合建图，它分为角点优化、平面点优化、配准与更新等部分；
-5. 保存关键帧和因子；
-6. 校正位姿；
-7. 发布Tf；
-8. 发布关键位姿和帧数据；
-### 闭环检测
-进行闭环检测和闭环修正
-1. 进行闭环检测detectLoopClosure()
-2. 使用icp迭代进行对齐。
-3. 对齐之后判断迭代是否收敛以及噪声是否太大，是则返回并直接结束函数。否则进行迭代后的数据发布处理
-4. 接得到latestSurfKeyFrameCloud和nearHistorySurfKeyFrameCloudDS之间的位置平移和旋转
-5. 进行图优化过程
-### 可视化地图
-1. 通过KDTree进行最近邻搜索;
-2. 通过搜索得到的索引放进队列;
-3. 通过两次下采样，减小数据量;
-## [transformFusion.cpp](/src/LeGO-LOAM/LeGO-LOAM/src/transformFusion.cpp)
-融合粗、精配准的里程计信息
+	- ### 构造函数
+	  订阅话题:
+	  
+	    "/laser_cloud_corner_last"(sensor_msgs::PointCloud2)，数据处理函数laserCloudCornerLastHandler
+	    "/laser_cloud_surf_last"(sensor_msgs::PointCloud2)，数据处理函数laserCloudSurfLastHandler
+	    "/outlier_cloud_last"(sensor_msgs::PointCloud2)，数据处理函数laserCloudOutlierLastHandler
+	     "/laser_odom_to_init"(nav_msgs::Odometry)，数据处理函数laserOdometryHandler
+	    imuTopic = "/imu/data"(sensor_msgs::Imu)，数据处理函数imuHandler
+	  
+	  发布话题，这些topic有：
+	  
+	    "/key_pose_origin"(sensor_msgs::PointCloud2)
+	    "/laser_cloud_surround"(sensor_msgs::PointCloud2)
+	    "/aft_mapped_to_init"(nav_msgs::Odometry)
+	    "/history_cloud"(sensor_msgs::PointCloud2)
+	    "/corrected_cloud"(sensor_msgs::PointCloud2)
+	    "/recent_cloud"(sensor_msgs::PointCloud2)
+	    "/registered_cloud"(sensor_msgs::PointCloud2)
+	- ### 主线程
+	  
+	  1. **坐标变换**：将坐标转移到世界坐标系下，得到可用于建图的Lidar坐标，即修改transformTobeMapped的值；
+	  2. **提取周围的关键帧**；
+	  3. **下采样当前scan**：将当前各类点云降采样
+	  4. **当前scan进行图优化过程**:根据现有地图与最新点云数据进行配准从而更新机器人精确位姿与融合建图，它分为角点优化、平面点优化、配准与更新等部分；
+	  5. 保存关键帧和因子；
+	  6. 校正位姿；
+	  7. 发布Tf；
+	  8. 发布关键位姿和帧数据；
+	- ### 闭环检测
+	  进行闭环检测和闭环修正
+	  1. 进行闭环检测detectLoopClosure()
+	  2. 使用icp迭代进行对齐。
+	  3. 对齐之后判断迭代是否收敛以及噪声是否太大，是则返回并直接结束函数。否则进行迭代后的数据发布处理
+	  4. 接得到latestSurfKeyFrameCloud和nearHistorySurfKeyFrameCloudDS之间的位置平移和旋转
+	  5. 进行图优化过程
+	- ### 可视化地图
+	  1. 通过KDTree进行最近邻搜索;
+	  2. 通过搜索得到的索引放进队列;
+	  3. 通过两次下采样，减小数据量;
+- ## transformFusion
+  融合粗、精配准的里程计信息

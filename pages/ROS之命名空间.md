@@ -4,7 +4,7 @@ tags:: #ROS
 	- ROS中的命名空间类似于C++，主要是为了避免命名冲突
 	- 添加命名空间
 		- 通过 `rosrun rospkg ros_node ns:=/home/user1` 将节点放到命名空间`/home/user`下
-		- 通过<group>标签的ns属性添加命名空间
+		- 通过<group>标签的ns属性添加命名空间 #ROS之roslaunch 
 		  ```xml
 		  <group ns="A"></group>
 		  ```
@@ -30,7 +30,7 @@ tags:: #ROS
 - # 重映射
 	- 给节点或者话题起别名
 	- 通过 `rosrun rospkg ros_node __name:=A` 将节点重映射为A
-	- 通过<remap>标签进行重映射
+	- 通过<remap>标签进行重映射 #ROS之roslaunch 
 	  ```xml
 	  <remap from="ns1" to="ns2"/><!-- 更改命名空间 -->
 	  <remap from="topic1" to="topic2"/><!-- 更改topic名称 -->

@@ -1,13 +1,20 @@
 tags:: #编程语言
 
-- # std::numeric_limits
-	- 在库编译平台提供基础算术类型的极值等属性信息
-- # size_t
-	- C中任何对象所能达到的最大长度，是无符号整数
-	-
-	- 使用size_t可能会提高代码的可移植性、有效性或者可读性，或许同时提高这三者
-	- 参考文章
-		- [Why size_t matters](https://jeremybai.github.io/blog/2014/09/10/size-t)
+- # 变量类型
+	- ## size_t
+		- C中任何对象所能达到的最大长度，是无符号整数
+		-
+		- 使用size_t可能会提高代码的可移植性、有效性或者可读性，或许同时提高这三者
+		- 参考文章
+			- [Why size_t matters](https://jeremybai.github.io/blog/2014/09/10/size-t)
+-
+- # 模板库
+	- ## numeric_limits
+		- 在库编译平台提供基础算术类型的极值等属性信息
+	- ## chrono
+		- 时间库
+		- duration
+			- 一段时间
 - # STL库
 	- ## fill函数
 		- 用法用途
