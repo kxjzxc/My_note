@@ -131,3 +131,5 @@ tags:: #毕业设计 #SLAM
 	  3. 通过两次下采样，减小数据量;
 - ## transformFusion
   融合粗、精配准的里程计信息
+- 参考文章
+	- [LOAM(Lidar Odometry and Mapping)](https://leijiezhang001.github.io/LOAM/)
