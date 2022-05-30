@@ -11,8 +11,10 @@ tags:: #毕业设计
   ```
 	- **编译失败的原因**
 		- 没有用c++14编译，修改cmake
-# 显示
-```shell
-source voxblox_ws/devel/setup.bash
-rosmake voxblox_rviz_plugin
-```
+	- # 显示插件
+	  ```shell
+	  source voxblox_ws/devel/setup.bash
+	  rosmake voxblox_rviz_plugin
+	  ```
+- # 运行
+	-
