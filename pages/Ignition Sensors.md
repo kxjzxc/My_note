@@ -20,6 +20,15 @@ tags:: #ROS
 			  ```
 - # 自定义传感器
 -
+-
+- # 插件制作
+	- In order to use the sensor on Ignition Gazebo, one needs to write a system plugin that instantiates the sensor and updates it periodically with data from simulation.
+	- Take a look at ign-gazebo/examples/plugins/custom_sensor_system. for the full code. Here are some important pointers:
+		- Check for new entities that have ignition::gazebo::components::CustomSensor during the PreUpdate callback and instantiate new sensors as they appear in simulation.
+		- Don't assume all CustomSensors are of the type you need, be sure to check the type using the ignition::sensors::customType function.
+		- During PostUpdate, update all sensors with new data coming from simulation.
+		- Also during PostUpdate, delete any sensors that have been removed from simulation.
+	- 详情参见  [ign-gazebo/examples/plugins/custom_sensor_system](https://github.com/gazebosim/gz-sim/tree/main/examples/plugin/custom_sensor_system)
 - 参考文章
 	- [Tutorials](https://gazebosim.org/api/sensors/6.0/tutorials.html)
 	-

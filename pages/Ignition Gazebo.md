@@ -27,3 +27,10 @@ tags:: #ROS
 			  ```bash
 			  sudo apt-get install libignition-gazebo<#>-dev
 			  ```
+- # 名词解释
+	- Entity
+		- 实体标识模拟中的单个对象，例如模型、链接或灯光。 在其核心，实体只是一个标识符。
+	- EntityComponentManager(ECM)
+		- 实体管理器
+	- Component
+		- 组件

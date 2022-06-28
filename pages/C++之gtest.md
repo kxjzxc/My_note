@@ -36,5 +36,12 @@ tags:: #C++
 				    return RUN_ALL_TESTS();   
 				  }
 				  ```
-		- ## `TEST_P(MyTestSuite, DoesSomething)`
+		- ## `TEST_P(TestFixtureName, TestName)`
+			- ```cpp
+			  TEST_P(MyTestSuite, DoesSomething) {
+			    ...
+			    EXPECT_TRUE(DoSomething(GetParam()));
+			    ...
+			  }
+			  ```
 			-
